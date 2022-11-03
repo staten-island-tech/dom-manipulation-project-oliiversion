@@ -1,3 +1,5 @@
-const button = document.getElementById("btn");
-
-console.log(button);
+const DOMSelectors = {
+  button: document.getElementById("btn"),
+  text: document.querySelector("text"),
+};
+console.log(DOMSelectors.button);
