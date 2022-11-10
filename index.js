@@ -2,12 +2,12 @@ const DOMSelectors = {
   button: document.getElementById("button"),
   text: document.querySelector("#text"),
   box: document.getElementById("big-box"),
-  points: document.querySelectorAll(".point"),
+  points: document.querySelectorAll(".points"),
 };
 
 function backgroundAndText(background, text) {
-  background.style.backgroundColor = "red";
-  text.innerHTML = "big red box";
+  background.style.backgroundColor = "pink";
+  text.textContent = "big pink box";
   text.style.fontSize = "40px";
 }
 
@@ -19,3 +19,6 @@ function changeLi() {
     console.log(points);
   });
 }
+
+const dog = "bark";
+DOMSelectors.box.insertAdjacentHTML("afterend", <h1>Dogges</h1>);
