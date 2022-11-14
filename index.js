@@ -1,27 +1,25 @@
-
-
 DOMSelectors = {
   submit: document.getElementById("submit"),
-  nameInput: document.getElementById("name-input"),
-  titleInput: document.getElementById("title-input"),
-  imageInput: document.getElementById("image-input"),
-  objects: document.getElementById("objects"),
-}
-DOMSelectors.submit.addEventListener('click', function() {
-  p = DOMSelectors.nameInput.value;
-  h2 = DOMSelectors.titleInput.value;
-  image = DOMSelectors.imageInput.value;
-  DOMSelectors.objects.insertAdjacentHTML(
-      "afterbegin",
-      `<div class="object">
+  name: document.getElementById("name"),
+  title: document.getElementById("title"),
+  image: document.getElementById("image"),
+  stuff: document.getElementById("stuff"),
+};
+DOMSelectors.submit.addEventListener("click", function () {
+  p = DOMSelectors.name.value;
+  h2 = DOMSelectors.title.value;
+  image = DOMSelectors.image.value;
+  DOMSelectors.stuff.insertAdjacentHTML(
+    "afterbegin",
+    `<div class="stuff">
               <h2>${h2}</h2>
               <p>${p}</p>
-              <img class="object-image" src="${image}">
+              <img class="stuff-image" src="${image}">
               <br>
-              <button class="remove-button" onclick="this.parentElement.remove()">Remove</button>
+              <button class="remove-btn" onclick="this.parentElement.remove()">Remove</button>
       </div>`
-  )
-  DOMSelectors.nameInput.value = '';
-  DOMSelectors.titleInput.value = '';
-  DOMSelectors.imageInput.value = '';
+  );
+  DOMSelectors.name.value = "";
+  DOMSelectors.titleInput.value = "";
+  DOMSelectors.image.value = "";
 });
