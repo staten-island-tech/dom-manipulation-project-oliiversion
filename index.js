@@ -1,24 +1,27 @@
-const DOMSelectors = {
-  button: document.getElementById("button"),
-  text: document.querySelector("#text"),
-  box: document.getElementById("big-box"),
-  points: document.querySelectorAll(".points"),
-};
 
-function backgroundAndText(background, text) {
-  background.style.backgroundColor = "pink";
-  text.textContent = "big pink box";
-  text.style.fontSize = "40px";
+
+DOMSelectors = {
+  submit: document.getElementById("submit"),
+  nameInput: document.getElementById("name-input"),
+  titleInput: document.getElementById("title-input"),
+  imageInput: document.getElementById("image-input"),
+  objects: document.getElementById("objects"),
 }
-
-DOMSelectors.button.addEventListener("click", function () {
-  backgroundAndText(DOMSelectors.box, DOMSelectors.text);
+DOMSelectors.submit.addEventListener('click', function() {
+  p = DOMSelectors.nameInput.value;
+  h2 = DOMSelectors.titleInput.value;
+  image = DOMSelectors.imageInput.value;
+  DOMSelectors.objects.insertAdjacentHTML(
+      "afterbegin",
+      `<div class="object">
+              <h2>${h2}</h2>
+              <p>${p}</p>
+              <img class="object-image" src="${image}">
+              <br>
+              <button class="remove-button" onclick="this.parentElement.remove()">Remove</button>
+      </div>`
+  )
+  DOMSelectors.nameInput.value = '';
+  DOMSelectors.titleInput.value = '';
+  DOMSelectors.imageInput.value = '';
 });
-function changeLi() {
-  DOMSelectors.points.forEach((point) => {
-    console.log(points);
-  });
-}
-
-const dog = "bark";
-DOMSelectors.box.insertAdjacentHTML("afterend", <h1>Dogges</h1>);

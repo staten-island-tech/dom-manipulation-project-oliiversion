@@ -1,28 +1,37 @@
-html,
-body,
-* {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  box-sizing: border-box;
-  font-size: 100%;
-  color: aliceblue;
-  font-family: "Manrope", sans-serif;
-}
 
-body{
-    background-color: rgb(25, 25, 25);
-}
-.text{
-    font-size: 95%;
-}
-
-.button {
-    background-color: #355858;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+html
+    body {
+        text-align: center;
+        font-size: larger;
+        font-style: bold;
+        font-family:"Manrope", sans-serif;
+        background-color: rgb(85, 144, 100);
+    }
+    .object {
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+        background-color: rgb(25, 25, 25);
+        border: 2px rgb(209, 209, 209) solid;
+        border-radius: 10px;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .object-image {
+        width: 90%;
+    }
+    input {
+        margin-bottom: 10px;
+    }
+    #submit {
+        margin-bottom: 20px;
+    }
+    .remove-button {
+        width: 20%;
+        height: 40px;
+        background-color: red;
+        margin-bottom: 20px;
+        color: white;
+        font-weight: 900;
+        font-size: 1rem;
+    }
