@@ -20,6 +20,6 @@ DOMSelectors.submit.addEventListener("click", function () {
       </div>`
   );
   DOMSelectors.name.value = "";
-  DOMSelectors.titleInput.value = "";
+  DOMSelectors.title.value = "";
   DOMSelectors.image.value = "";
 });
