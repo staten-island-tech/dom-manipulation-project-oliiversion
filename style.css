@@ -17,6 +17,7 @@ html body {
 }
 .stuff-image {
   width: 90%;
+  size: 70px;
 }
 input {
   margin-bottom: 10px;
