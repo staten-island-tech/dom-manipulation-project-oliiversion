@@ -34,31 +34,6 @@ const resetButton = document.getElementById("reset-button");
 
 function addNewDiv() {}
 
-// the text that the button is initialized with
-const initialText = removebutton.textContent;
-
-// the text that the button contains after being clicked
-const clickedText = "remove";
-
-// we hoist the event listener callback function
-// to prevent having duplicate listeners attached
-function eventListener() {
-  buttonToBeClicked.textContent = clickedText;
-}
-
-function addListener() {
-  buttonToBeClicked.addEventListener("click", eventListener, {
-    passive: true,
-    once: true,
-  });
-}
-resetButton.addEventListener("click", () => {
-  buttonToBeClicked.textContent = initialText;
-  addListener();
-});
-
-addListener();
-
 DOMSelectors.container.insertAdjacentHTML(
   "afterbegin",
   `<div class="display">
