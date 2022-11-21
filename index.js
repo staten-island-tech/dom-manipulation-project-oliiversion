@@ -1,14 +1,13 @@
-<<<<<<< HEAD
-/* DOMSelectors = {
+DOMSelectors = {
   submit: document.getElementById("submit"),
-=======
+};
 const DOMSelectors = {
   put: document.getElementById("put"),
->>>>>>> 4f643da5febbbd5e4246a8f633b66aa70e46d508
   name: document.getElementById("name"),
   title: document.getElementById("title"),
   image: document.getElementById("image"),
   stuff: document.getElementById("stuff"),
+  remove: document.getElementById("remove"),
 };
 DOMSelectors.put.addEventListener("click", function () {
   let p = DOMSelectors.name.value;
@@ -24,25 +23,12 @@ DOMSelectors.put.addEventListener("click", function () {
               <br>
 
             
-              /* <button class="remove-btn" onclick="this.parentElement.remove()">delete</button>
-              cannot be onclick button!!! */
       </div>`
   );
   DOMSelectors.name.value = "";
   DOMSelectors.title.value = "";
   DOMSelectors.image.value = "";
 });
- */
-
-const DOMSelectors = {
-  songName: document.getElementById("songName"),
-  artistName: document.getElementById("artistName"),
-  imgURL: document.getElementById("imgURL"),
-  create: document.getElementById("create"),
-  container: document.getElementById("container"),
-  display: document.querySelector("display"),
-  remove: document.getElementById("remove"),
-};
 
 const resetButton = document.getElementById("reset-button");
 
@@ -53,39 +39,30 @@ DOMSelectors.create.addEventListener("click", function () {
   let artist = DOMSelectors.artistName.value;
   let img = DOMSelectors.imgURL.value;
 
-  
+  // the text that the button is initialized with
+  const initialText = buttonToBeClicked.textContent;
 
-// the text that the button is initialized with
-const initialText = buttonToBeClicked.textContent;
+  // the text that the button contains after being clicked
+  const clickedText = "You have clicked this button.";
 
-// the text that the button contains after being clicked
-const clickedText = "You have clicked this button.";
+  // we hoist the event listener callback function
+  // to prevent having duplicate listeners attached
+  function eventListener() {
+    buttonToBeClicked.textContent = clickedText;
+  }
 
-// we hoist the event listener callback function
-// to prevent having duplicate listeners attached
-function eventListener() {
-  buttonToBeClicked.textContent = clickedText;
-}
-
-function addListener() {
-  buttonToBeClicked.addEventListener(
-    "click",
-    eventListener,
-    {
+  function addListener() {
+    buttonToBeClicked.addEventListener("click", eventListener, {
       passive: true,
-      once: true
-    }
-  );
-}
-resetButton.addEventListener(
-  "click",
-  () => {
+      once: true,
+    });
+  }
+  resetButton.addEventListener("click", () => {
     buttonToBeClicked.textContent = initialText;
     addListener();
-  }
-);
+  });
 
-addListener();
+  addListener();
 
   DOMSelectors.container.insertAdjacentHTML(
     "afterbegin",
