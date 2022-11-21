@@ -34,44 +34,38 @@ const resetButton = document.getElementById("reset-button");
 
 function addNewDiv() {}
 
-DOMSelectors.create.addEventListener("click", function () {
-  let song = DOMSelectors.songName.value;
-  let artist = DOMSelectors.artistName.value;
-  let img = DOMSelectors.imgURL.value;
+// the text that the button is initialized with
+const initialText = removebutton.textContent;
 
-  // the text that the button is initialized with
-  const initialText = buttonToBeClicked.textContent;
+// the text that the button contains after being clicked
+const clickedText = "remove";
 
-  // the text that the button contains after being clicked
-  const clickedText = "You have clicked this button.";
+// we hoist the event listener callback function
+// to prevent having duplicate listeners attached
+function eventListener() {
+  buttonToBeClicked.textContent = clickedText;
+}
 
-  // we hoist the event listener callback function
-  // to prevent having duplicate listeners attached
-  function eventListener() {
-    buttonToBeClicked.textContent = clickedText;
-  }
-
-  function addListener() {
-    buttonToBeClicked.addEventListener("click", eventListener, {
-      passive: true,
-      once: true,
-    });
-  }
-  resetButton.addEventListener("click", () => {
-    buttonToBeClicked.textContent = initialText;
-    addListener();
+function addListener() {
+  buttonToBeClicked.addEventListener("click", eventListener, {
+    passive: true,
+    once: true,
   });
-
+}
+resetButton.addEventListener("click", () => {
+  buttonToBeClicked.textContent = initialText;
   addListener();
+});
 
-  DOMSelectors.container.insertAdjacentHTML(
-    "afterbegin",
-    `<div class="display">
+addListener();
+
+DOMSelectors.container.insertAdjacentHTML(
+  "afterbegin",
+  `<div class="display">
         <image src></image>
         <h1 class="song">Title: ${song}</h1>
         <img src="${img}" class="myImage"alt="">
         <h2 class="art">Song By:${artist}</h2>
         <button id="remove"    </button>
     </div>`
-  );
-});
+);
