@@ -2,28 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Comptaible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dom manipulation</title>
+    <title>yaya</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <label for="title">Title: </label>
-    <input id="title" />
-    <br />
-    <label for="name">Artist: </label>
-    <input id="name" />
-    <br />
-    <label for="image">Image: </label>
-    <input id="image" />
-    <br />
-    <button id="put">Enter</button>
-    <br />
-    <div id="stuff"></div>
-    <script src="app.js"></script>
+    <h4>Create an Album Cover!!</h4>
+    <div class="form">
+      <div class="song">
+        <label for="title">Song</label>
+        <input type="text" id="title" class="input titleInput" />
+      </div>
+      <div class="artist">
+        <label for="artist">Artist</label>
+        <input type="text" id="artist" class="input artistInput" />
+      </div>
+      <div class="imageurl">
+        <label for="url">Image URL</label>
+        <input type="text" id="imageurl" class="input urlInput" />
+      </div>
+    </div>
+    <button id="create">Results</button>
+    <div>
+      <div id="box"></div>
+    </div>
+    <script src="hi.js"></script>
   </body>
 </html>

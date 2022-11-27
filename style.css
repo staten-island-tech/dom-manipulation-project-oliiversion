@@ -1,36 +1,60 @@
-html body {
-  text-align: center;
-  font-size: larger;
-  font-style: bold;
-  font-family: "Manrope", sans-serif;
-  background-color: rgb(85, 144, 100);
+*,
+html,
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Manrope', sans-serif;
+   color: aliceblue;
 }
-.stuff {
-  margin: auto;
-  margin-top: 30px;
-  text-align: center;
-  background-color: rgb(25, 25, 25);
-  border: 2px rgb(209, 209, 209) solid;
-  border-radius: 10px;
-  width: 50%;
-  margin-bottom: 20px;
+
+h4{
+    margin-top: 50px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    border: 3px solid white;
+    background-color: rgb(11, 118, 52) ;
+    border-radius: 15px;
+    font-size: 4vh;
 }
-.stuff-image {
-  width: 90%;
-  size: 70px;
+
+body{
+    align-items: center; 
+    text-align: center;
+    background-color: rgb(31, 107, 86);
+    margin: 30px;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
 }
-input {
-  margin-bottom: 10px;
+
+.form{
+    margin-top: 5%;
+    border: 3px solid white;
+    font-size: 2vh; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(11,118,52);
+    border-radius: 15px; 
 }
-#put {
-  margin-bottom: 20px;
+
+h3{
+    margin-top:100px;
+    border: 3px solid white; 
+    background-color: rgb(10, 86, 67); 
+    font-size: 30px; 
+    border-radius: 15px; 
 }
-.remove-btn {
-  width: 20%;
-  height: 40px;
-  background-color: red;
-  margin-bottom: 20px;
-  color: white;
-  font-weight: 900;
-  font-size: 1rem;
+
+.display{
+    margin: 30px;
+    border: 3px solid white;
+    background-color: rgb(120, 120, 236); 
+    border-radius: 5px;
+    padding-top: 10px; 
+}
+
+#delete{
+    margin-top: 15%;
+     
 }
