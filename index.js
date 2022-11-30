@@ -25,15 +25,11 @@ DOMSelectors.create.addEventListener("click", function (event) {
       </div>`
     );
   }
-  function erase() {
-    let removes = document.querySelectorAll(".remove");
-    removes.forEach((eachRemove) => {
-      eachRemove.addEventListener("click", (event) => {
-        event.target.parentElement.remove();
-      });
-    });
-  }
-
-  makeCard();
-  erase();
-});
+  const removeButton = document.querySelector ("remove" );
+removeButton.addEventListener("click,(event)");
+if (event.target. tagName === "BUTTON") {
+const button = event. target;
+const button = button. parentNode;
+const display = form.parentNode;
+if (button.textContent === "Remove Album") 
+display.removeChild(form);}
