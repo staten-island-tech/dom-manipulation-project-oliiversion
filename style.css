@@ -5,7 +5,6 @@ body{
    padding: 0;
    box-sizing: border-box;
    font-family: 'Manrope', sans-serif;
-   color: aliceblue;
 }
 
 h4{
@@ -13,7 +12,7 @@ h4{
     padding-top:15px;
     padding-bottom: 15px;
     border: 3px solid white;
-    background-color: rgb(11, 118, 52) ;
+    background-color: rgb(16, 99, 59) ;
     border-radius: 15px;
     font-size: 4vh;
 }
@@ -21,7 +20,7 @@ h4{
 body{
     align-items: center; 
     text-align: center;
-    background-color: rgb(31, 107, 86);
+    background-color: rgb(71, 179, 76);
     margin: 30px;
     min-height: 100vh;
     display:flex;
@@ -34,14 +33,14 @@ body{
     font-size: 2vh; 
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgb(11,118,52);
+    background-color: rgb(11, 86, 43);
     border-radius: 15px; 
 }
 
 h3{
     margin-top:100px;
     border: 3px solid white; 
-    background-color: rgb(10, 86, 67); 
+    background-color: rgb(24, 68, 55); 
     font-size: 30px; 
     border-radius: 15px; 
 }
@@ -49,12 +48,18 @@ h3{
 .display{
     margin: 30px;
     border: 3px solid white;
-    background-color: rgb(120, 120, 236); 
+    background-color: rgb(24, 68, 55); 
     border-radius: 5px;
     padding-top: 10px; 
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
-#delete{
-    margin-top: 15%;
-     
+.container{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }

@@ -1,35 +1,39 @@
 const DOMSelectors = {
-  song: document.getElementById("song"),
-  artist: document.getElementById("artist"),
-  imgURL: document.getElementById("imgURL"),
-  create: document.getElementById("create"),
+  songtitle: document.getElementById("title"),
+  artistname: document.getElementById("artist"),
+  imageurl: document.getElementById("imageurl"),
+  makecard: document.getElementById("create"),
   box: document.getElementById("box"),
+  container: document.getElementById("container"),
   display: document.querySelector("display"),
+  delete: document.getElementById("delete"),
 };
 
-DOMSelectors.create.addEventListener("click", function (event) {
-  event.preventDefault();
-  let input1 = DOMSelectors.song.value;
-  let input2 = DOMSelectors.artist.value;
-  let input3 = DOMSelectors.imgURL.value;
+DOMSelectors.makecard.addEventListener("click", function () {
+  let songtitle = DOMSelectors.songtitle.value;
+  let artistname = DOMSelectors.artistname.value;
+  let imageurl = DOMSelectors.imageurl.value;
 
-  function makeCard() {
-    DOMSelectors.box.insertAdjacentHTML(
-      "afterbegin",
-      `<div class="display">
-          <image src></image>
-          <h1 class="song">Title: ${input1}</h1>
-          <img src="${input3}" class="myImage"alt="">
-        <h2 class="artist">Song By:${input2}</h2>
-        <button class="remove">Delete</button>
+  DOMSelectors.container.insertAdjacentHTML(
+    "afterend",
+    `<div class="display">
+      <image src></image>
+      <h1 class="songtitles">${songtitle}</h1>
+      <h2 class="artists">${artistname}</h2>
+      <img src="${imageurl}" class="myImage"alt="">
+      <button class="remove">Remove Album</button>
       </div>`
-    );
-  }
-  const removeButton = document.querySelector ("remove" );
-removeButton.addEventListener("click,(event)");
-if (event.target. tagName === "BUTTON") {
-const button = event. target;
-const button = button. parentNode;
-const display = form.parentNode;
-if (button.textContent === "Remove Album") 
-display.removeChild(form);}
+  );
+
+  const removeButton = document.querySelector(".remove");
+  removeButton.addEventListener("click", (event) => {
+    if (event.target.tagName === "BUTTON") {
+      const button = event.target;
+      const card = button.parentNode;
+      const display = card.parentNode;
+      if (button.textContent === "Remove Album") {
+        display.removeChild(card);
+      }
+    }
+  });
+});
