@@ -12,7 +12,7 @@ h4{
     padding-top:15px;
     padding-bottom: 15px;
     border: 3px solid white;
-    background-color: rgb(16, 99, 59) ;
+    background-color: rgb(37, 197, 120) ;
     border-radius: 15px;
     font-size: 4vh;
 }
@@ -20,7 +20,7 @@ h4{
 body{
     align-items: center; 
     text-align: center;
-    background-color: rgb(71, 179, 76);
+    background-color: rgb(38, 107, 82);
     margin: 30px;
     min-height: 100vh;
     display:flex;
@@ -33,14 +33,14 @@ body{
     font-size: 2vh; 
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgb(11, 86, 43);
+    background-color: rgb(84, 199, 134);
     border-radius: 15px; 
 }
 
 h3{
     margin-top:100px;
     border: 3px solid white; 
-    background-color: rgb(24, 68, 55); 
+    background-color: rgb(68, 186, 151); 
     font-size: 30px; 
     border-radius: 15px; 
 }
@@ -48,7 +48,7 @@ h3{
 .display{
     margin: 30px;
     border: 3px solid white;
-    background-color: rgb(24, 68, 55); 
+    background-color: rgb(49, 148, 118); 
     border-radius: 5px;
     padding-top: 10px; 
     flex-direction: column;
