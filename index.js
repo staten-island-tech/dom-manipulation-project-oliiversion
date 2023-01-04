@@ -31,7 +31,7 @@ DOMSelectors.makecard.addEventListener("click", function () {
       const button = event.target;
       const card = button.parentNode;
       const display = card.parentNode;
-      if (button.textContent === "Remove Album") {
+      if (button.textContent === "Remove") {
         display.removeChild(card);
       }
     }

@@ -1,65 +1,68 @@
 *,
 html,
-body{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: 'Manrope', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 }
 
-h4{
-    margin-top: 50px;
-    padding-top:15px;
-    padding-bottom: 15px;
-    border: 3px solid white;
-    background-color: rgb(37, 197, 120) ;
-    border-radius: 15px;
-    font-size: 4vh;
+h4 {
+  margin-top: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 3px solid white;
+  background-color: rgb(37, 197, 120);
+  border-radius: 15px;
+  font-size: 4vh;
 }
 
-body{
-    align-items: center; 
-    text-align: center;
-    background-color: rgb(38, 107, 82);
-    margin: 30px;
-    min-height: 100vh;
-    display:flex;
-    flex-direction: column;
+body {
+  align-items: center;
+  text-align: center;
+  background-color: rgb(38, 107, 82);
+  margin: 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.form{
-    margin-top: 5%;
-    border: 3px solid white;
-    font-size: 2vh; 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgb(84, 199, 134);
-    border-radius: 15px; 
+.form {
+  margin-top: 5%;
+  border: 3px solid white;
+  font-size: 2vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(84, 199, 134);
+  border-radius: 15px;
 }
 
-h3{
-    margin-top:100px;
-    border: 3px solid white; 
-    background-color: rgb(68, 186, 151); 
-    font-size: 30px; 
-    border-radius: 15px; 
+h3 {
+  margin-top: 100px;
+  border: 3px solid white;
+  background-color: rgb(68, 186, 151);
+  font-size: 30px;
+  border-radius: 15px;
 }
 
-.display{
-    margin: 30px;
-    border: 3px solid white;
-    background-color: rgb(49, 148, 118); 
-    border-radius: 5px;
-    padding-top: 10px; 
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+.display {
+  margin: 30px;
+  border: 3px solid white;
+  background-color: rgb(49, 148, 118);
+  border-radius: 5px;
+  padding-top: 10px;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
-.container{
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+.container {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.remove {
 }
