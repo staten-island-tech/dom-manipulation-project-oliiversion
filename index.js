@@ -14,7 +14,7 @@ DOMSelectors.makecard.addEventListener("click", function () {
   let artistname = DOMSelectors.artistname.value;
   let imageurl = DOMSelectors.imageurl.value;
 
-  DOMSelectors.container.insertAdjacentHTML(
+  DOMSelectors.box.insertAdjacentHTML(
     "afterend",
     `<div class="display">
       <image src></image>

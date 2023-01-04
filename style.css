@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Manrope", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 h4 {
@@ -57,7 +57,7 @@ h3 {
   align-items: center;
 }
 
-.container {
+.box {
   flex-direction: column;
   justify-content: center;
   display: flex;
