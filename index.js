@@ -1,7 +1,7 @@
 const DOMSelectors = {
   songtitle: document.getElementById("title"),
   artistname: document.getElementById("artist"),
-  imageurl: document.getElementById("imageurl"),
+  image: document.getElementById("image"),
   makecard: document.getElementById("create"),
   box: document.getElementById("box"),
   container: document.getElementById("container"),
@@ -12,7 +12,7 @@ const DOMSelectors = {
 DOMSelectors.makecard.addEventListener("click", function () {
   let songtitle = DOMSelectors.songtitle.value;
   let artistname = DOMSelectors.artistname.value;
-  let imageurl = DOMSelectors.imageurl.value;
+  let image = DOMSelectors.image.value;
 
   DOMSelectors.box.insertAdjacentHTML(
     "afterend",
@@ -20,7 +20,7 @@ DOMSelectors.makecard.addEventListener("click", function () {
       <image src></image>
       <h1 class="songtitles">${songtitle}</h1>
       <h2 class="artists">${artistname}</h2>
-      <img src="${imageurl}" class="myImage"alt="">
+      <img src="${image}" class="myImage"alt="">
       <button class="remove">Remove Album</button>
       </div>`
   );
